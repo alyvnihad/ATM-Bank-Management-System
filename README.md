@@ -9,7 +9,7 @@
 
 ## Microservices
 
-The system consists of **5 main microservices**:
+The system consists of **7 main microservices**:
 
 | Service | Description | GitHub Link |
 | ------- | ----------- | ----------- |
@@ -18,6 +18,7 @@ The system consists of **5 main microservices**:
 | Card Service | Handles card creation, PIN verification, blocking and unblocking of cards. Communicates with AccountService to create accounts linked to new cards| [Card Service](https://github.com/alyvnihad/ATM-Card-Service) |
 | Transaction Service | Logs all account transactions (deposit, withdraw, transfer) and provides transaction history for accounts | [Transaction Service](https://github.com/alyvnihad/ATM-Transaction-Service) |
 | ATM Service | Manages ATM operations including login, deposit, withdraw, balance inquiry, and logout through communication with Auth and Account services | [ATM Service](https://github.com/alyvnihad/ATM-Atm-Service) |
+| Notification Service | Handles email notifications for registrations and transactions, including PDF attachments and security alerts | [Notification Service](https://github.com/alyvnihad/ATM-Notification-Service) |
 | Report Service | Generates PDF account information reports for users using data from account and card services. | [Report Service](https://github.com/alyvnihad/ATM-Report-Service) |
 
 ---
