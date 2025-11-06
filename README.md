@@ -13,6 +13,7 @@ The system consists of **7 main microservices**:
 
 | Service | Description | GitHub Link |
 | ------- | ----------- | ----------- |
+| API Gateway | Routing, load balancing, and security for all services | [API Gateway](https://github.com/alyvnihad/ATM-API-Gateway) |
 | Auth Service | Handles user registration, login, logout, and token management. Communicates with Card and Notification services to create cards and send registration notifications | [Auth Service](https://github.com/alyvnihad/ATM-Auth-Service) |
 | Account Service | Manages user accounts including creation, deposit, withdraw, balance inquiry, and transfer limits. Communicates with TransactionService to log transactions | [Account Service](https://github.com/alyvnihad/ATM-Account-Service) |
 | Card Service | Handles card creation, PIN verification, blocking and unblocking of cards. Communicates with AccountService to create accounts linked to new cards| [Card Service](https://github.com/alyvnihad/ATM-Card-Service) |
