@@ -20,7 +20,7 @@ The system consists of **8 main microservices**:
 | Transaction Service | Logs all account transactions (deposit, withdraw, transfer) and provides transaction history for accounts | [Transaction Service](https://github.com/alyvnihad/ATM-Transaction-Service) |
 | ATM Service | Manages ATM operations including login, deposit, withdraw, balance inquiry, and logout through communication with Auth and Account services | [ATM Service](https://github.com/alyvnihad/ATM-Atm-Service) |
 | Notification Service | Handles email notifications for registrations and transactions, including PDF attachments and security alerts | [Notification Service](https://github.com/alyvnihad/ATM-Notification-Service) |
-| Report Service | Generates PDF account information reports for users using data from account and card services. | [Report Service](https://github.com/alyvnihad/ATM-Report-Service) |
+| Report Service | Generates and exports PDF and Excel reports for customer account, card, and transaction data, including daily logs and monthly Top 10 customers, while storing and updating customer report information in the local file system. | [Report Service](https://github.com/alyvnihad/ATM-Report-Service) |
 
 ---
 
@@ -100,8 +100,10 @@ The system consists of **8 main microservices**:
 ### ReportService
 
 - Generates PDF documents containing customer account and card information using iText.
-- Generates Excel reports for daily logs.
-- Export Excel reports using Apache POI  
+- Generates Daily Log reports for transactions in Excel (.xlsx) format using Apache POI.
+- Creates monthly Top 10 customer lists in PDF format based on transaction amounts.
+- Collects customer transactions and stores and updates customer report data.
+- Saves generated reports to the local file system and allows them to be exported.
 
 ---
 
